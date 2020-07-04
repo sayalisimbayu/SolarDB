@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[APPUSERADDONCONFIG] (
+    [ID]                INT            IDENTITY (1, 1) NOT NULL,
+    [USID]              INT            NOT NULL,
+    [LANGUAGE]          VARCHAR (200)  NOT NULL,
+    [TIMEZONE]          VARCHAR (200)  NOT NULL,
+    [DATEFORMAT]        VARCHAR (200)  NOT NULL,
+    [LUCIDNOTIFICATION] NVARCHAR (250) NOT NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC),
+    FOREIGN KEY ([USID]) REFERENCES [dbo].[APPUSER] ([ID])
+);
+

@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[APPSETTINGS] (
+    [ID]          INT            IDENTITY (1, 1) NOT NULL,
+    [MODE]        VARCHAR (100)  DEFAULT ('') NOT NULL,
+    [ALIAS]       VARCHAR (100)  DEFAULT ('') NOT NULL,
+    [VALUE]       VARCHAR (100)  DEFAULT ((0)) NOT NULL,
+    [TYPE]        VARCHAR (2)    DEFAULT ('') NOT NULL,
+    [DESCRIPTION] NVARCHAR (200) DEFAULT ('') NOT NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+

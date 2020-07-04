@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[CATEGORY] (
+    [ID]        INT           IDENTITY (1, 1) NOT NULL,
+    [NAME]      VARCHAR (100) DEFAULT ('') NOT NULL,
+    [ISDELETED] BIT           DEFAULT ((0)) NOT NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+

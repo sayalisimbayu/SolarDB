@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[CART] (
+    [ID]        INT             IDENTITY (1, 1) NOT NULL,
+    [INVOICEID] INT             DEFAULT ((0)) NOT NULL,
+    [PRODUCTID] INT             DEFAULT ((0)) NOT NULL,
+    [QUANTITY]  DECIMAL (10, 2) DEFAULT ((0)) NOT NULL,
+    [PRICE]     DECIMAL (18, 2) DEFAULT ((0)) NOT NULL,
+    [AMOUNT]    DECIMAL (10, 2) DEFAULT ((0)) NOT NULL,
+    [ISDELETED] BIT             DEFAULT ((0)) NOT NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
