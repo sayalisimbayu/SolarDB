@@ -7,9 +7,12 @@
     [LUCIDNOTIFICATION] NVARCHAR (250) DEFAULT ('') NOT NULL,
     [THEME]             NVARCHAR (10)  DEFAULT ('') NOT NULL,
     [SKIN]              NVARCHAR (10)  DEFAULT ('theme-blue') NOT NULL,
+    [SOCIALLIST]        NVARCHAR (500) NULL,
     PRIMARY KEY CLUSTERED ([ID] ASC),
     FOREIGN KEY ([USID]) REFERENCES [dbo].[APPUSER] ([ID])
 );
+
+
 
 
 
